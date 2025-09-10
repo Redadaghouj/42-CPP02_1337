@@ -3,29 +3,16 @@
 #include <ostream>
 #include "Fixed.hpp"
 
-Fixed::Fixed() : _value(0)
-{
-	std::cout << "Default constructor called" << std::endl;
-}
+Fixed::Fixed() : _value(0) {}
 
-Fixed::Fixed(const Fixed &obj) : _value(obj._value)
-{
-	std::cout << "Copy constructor called" << std::endl;
-}
+Fixed::Fixed(const Fixed &obj) : _value(obj._value) {}
 
-Fixed::Fixed(const int num) : _value(num * (1 << _fractionalBits))
-{
-	std::cout << "Int constructor called" << std::endl;
-}
+Fixed::Fixed(const int num) : _value(num * (1 << _fractionalBits)) {}
 
-Fixed::Fixed(const float num) : _value(roundf(num * (1 << _fractionalBits)))
-{
-	std::cout << "Float constructor called" << std::endl;
-}
+Fixed::Fixed(const float num) : _value(roundf(num * (1 << _fractionalBits))) {}
 
 Fixed& Fixed::operator=(const Fixed &obj)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &obj)
 		this->_value = obj.getRawBits();
 	return (*this);
@@ -165,7 +152,4 @@ std::ostream& operator<<(std::ostream &out, const Fixed &obj)
 	return (out);
 }
 
-Fixed::~Fixed()
-{
-	std::cout << "Destructor called" << std::endl;
-}
+Fixed::~Fixed() {}

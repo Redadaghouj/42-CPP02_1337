@@ -10,13 +10,13 @@ CXXFLAGS := -Wall -Wextra -Werror -std=c++98
 
 RM := rm -rf
 
-NAME := fixed
+NAME := bsp
 
 VAL := valgrind --leak-check=full --track-origins=yes
 
-SRC := main.cpp Fixed.cpp
+SRC := main.cpp Fixed.cpp Point.cpp bsp.cpp
 
-INC := Fixed.hpp
+INC := Fixed.hpp Point.hpp
 
 OBJ := $(SRC:.cpp=.o)
 
