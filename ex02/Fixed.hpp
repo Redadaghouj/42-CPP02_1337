@@ -1,3 +1,6 @@
+#ifndef FIXED_HPP
+# define FIXED_HPP
+
 #include <ostream>
 
 class Fixed
@@ -37,3 +40,5 @@ class Fixed
 		static const Fixed &max(const Fixed &a, const Fixed &b);
 		friend std::ostream &operator<<(std::ostream &out, const Fixed &obj);
 };
+
+#endif

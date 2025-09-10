@@ -1,3 +1,6 @@
+#ifndef FIXED_HPP
+# define FIXED_HPP
+
 #include <ostream>
 
 class Fixed
@@ -20,3 +23,5 @@ class Fixed
 		int toInt() const;
 
 };
+
+#endif
