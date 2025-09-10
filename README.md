@@ -69,4 +69,4 @@ make re         # Performs a full rebuild
 -----
 
 For complete project details, see the subject file:
-[en.subject.pdf](https://www.google.com/search?q=https://github.com/redadaghouj/42-cpp02_1337/blob/bf5524b05feab23d05f330d9c0f4507a6db4b2f0/subject/en.subject.pdf)
+[en.subject.pdf](https://github.com/Redadaghouj/42-CPP02_1337/blob/main/subject/en.subject.pdf)
